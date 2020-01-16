@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-13 14:32:57
+ * @LastEditTime : 2020-01-14 11:37:32
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\src\components\alert\alert.vue
+ -->
 <template>
     <div class="alert">
         <div class="alert-main" v-for="item in notices" :key="item.name">
@@ -13,6 +21,7 @@
     }
 
     export default {
+        //Alert 组件不同于常规的组件使用方式，它最终是通过 JS 来调用的，因此组件不用预留 props 和 events 接口。
         data () {
             return {
                 notices: []
