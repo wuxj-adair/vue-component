@@ -220,7 +220,7 @@ var foo = {
 };
 
 foo.hasOwnProperty('bar'); // 始终返回 false
-
+  
 // 如果担心这种情况，
 // 可以直接使用原型链上真正的 hasOwnProperty 方法
 ({}).hasOwnProperty.call(foo, 'bar'); // true

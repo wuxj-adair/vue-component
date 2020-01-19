@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-01-16 14:50:11
+ * @LastEditTime : 2020-01-19 09:47:37
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\src\org\Function.js
+ */
 //call()方法的作用和 apply() 方法类似，
 //区别就是call()方法接受的是参数列表，而apply()方法接受的是一个参数数组。(记忆：apply 与array都是a开头，所以apply()接受的是一个参数数组)
 
@@ -47,3 +55,7 @@ var result1 = addArguments(1, 2); // 3
 var addThirtySeven = addArguments.bind(null, 37);
 var result2 = addThirtySeven(5); // 37 + 5 = 42 
 var result3 = addThirtySeven(5, 10);// 37 + 5 = 42 ，第二个参数被忽略
+
+
+
+
