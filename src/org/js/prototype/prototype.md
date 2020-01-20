@@ -1,4 +1,4 @@
-![prototype](F:\gitW\doc\prototype.png)
+![prototype](./prototype.png)
 
 ##### 原型和原型链    
 

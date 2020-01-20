@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 文本溢出出现省略号 -->
+    <div class="nowrap">单行文本溢出出现省略号:overflow: hidden;text-overflow:ellipsis;white-space: nowrap;</div>
+    <div class="line-clamp">多行文本溢出出现省略号:display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3;</div>
+
+    <!-- 阻止box-shadow阴影被覆盖 -->
+    <div>
+        <div class="box-shadow1">box-shadow1</div>
+        <div class="box-shadow2">box-shadow2</div>
+    </div>
+</body>
+<style>
+    /* 单行文本溢出出现省略号 */
+    .nowrap {
+        width: 500px;
+        /*为了兼容部分浏览器，需要设定宽度*/
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* 多行文本溢出出现省略号 clamp:固定*/
+    /* 因使用了WebKit的CSS扩展属性，该方法适用于WebKit浏览器及移动端； */
+    .line-clamp {
+        width: 200px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        /*设置具体的行数*/
+
+    }
+
+    /* 阻止box-shadow阴影被覆盖 */
+    .box-shadow1 {
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.06);
+        transform: translate3d(0, 0, 0);
+        /* 或者 */
+        /* position:relative; */
+        /* z-index: 2;  */
+    }
+
+    .box-shadow2 {
+        background: #FFF;
+    }
+</style>
+
+</html>
