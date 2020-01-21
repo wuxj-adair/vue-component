@@ -1,0 +1,134 @@
+邮箱:https://qiye.aliyun.com
+wuxiangjun@shoubakeji.com 
+wxjAdair20056
+
+禅道:http://zentao.shouba.cn/my/
+wuxiangjun
+wuxiangjun@shoubakeji.com
+
+Git:http://shoubagit.shouba.cn/
+wuxiangjun
+wuxiangjun@shoubakeji.com
+
+API管理：http://yapi.shouba.cn/group/13
+wuxiangjun@shoubakeji.com
+wuxiangjun
+
+宝塔：http://47.106.155.18:8888/
+shouba2019   
+45StMM6DdmZK  
+
+瘦吧后台管理:http://admin.shouba.cn/#/login
+瘦吧后台管理账号:
+shouba-web-admin:  hanxiyang
+shouba2019
+------------------------web------------------------
+
+现网网址: http://web.shouba.cn/222/daily
+开发网址: testweb.shoubakeji.cn/214
+
+现网服务器:
+120.79.198.246
+120.79.195.246
+Per123456@
+/data/wwwroot/shoubakejiweb
+vim /usr/local/nginx/conf/vhost/web.shoubakeji.net.conf
+cat /usr/local/nginx/conf/vhost/web.shoubakeji.net.conf
+
+测试服务器: 
+47.112.207.238
+Shouba123@
+Shouba@#2020
+/usr/local/shouba/web0629
+
+活动服务器:   
+47.106.155.18      
+root     
+Per123456@
+/www/wwwroot/activityweb
+
+
+F:\shoubaWork\shouba-h5-project\dist
+------------------------web------------------------
+微信公众平台:sb@zhi20.com
+微信小程序:shoubaguanfang@shoubakeji.com
+sbsb2018
+wx6b8d51b301678cbc
+214952211d01d7013229149ddc3501d1
+
+2.0正式服务器  119.23.105.167  root  zBsKz5TF37CA      
+后台： http://119.23.105.167:8888/shouba  shouba2019_2.0  srtNiRXXXJJR
+
+
+shouba-h5-project: 18520868479
+12345678
+
+1208
+
+192.168.31.80       39144
+生喜: http://192.168.31.141
+
+C:\Users\DELL\Downloads
+
+http://mpvue.com
+
+
+document.cookie='userId=446051'
+document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDYwNTEiLCJleHAiOjE1NzQzMDQ2Njl9.BKSmA1S4PumZtmZNiWamVX2iZzNocePtCmJo6NRThZs'
+
+
+document.cookie='userId=446677'
+document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDY2NzciLCJleHAiOjE1NzY0Nzk3MTR9.Vuh-GmkObbGvTs2T5CR7WICD5mlKjN9i69cHpmnwFsw'
+
+
+document.cookie='userId=446677'
+document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDY2NzciLCJleHAiOjE1Nzc1OTE5NzV9.5GFshqHmzGUZB5Vn01O_iC2mbHUlNMQnwVDGFi_evKQ'
+
+document.cookie='userId=446939'
+document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDY5MzkiLCJleHAiOjE1Nzg3OTYxNDd9.RTVqjBs3rVdxYyZvlJKFLkbqxeLqmusRqn8AgJvg7zk'
+
+document.cookie='userId=10012152,'
+document.cookie="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDAxMjE1MiIsImV4cCI6MTU3OTQxOTkwNH0.0r7yStgaCCY9bPdltiYcze9XXVAEHOH0kv6pUTwp4ac  
+
+测试手机号：
+187186821600
+
+测试：
+
+体脂师
+18718682150
+123456789
+
+document.cookie='userId=10000039'
+document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDAwMDAzOSIsImV4cCI6MTU3NDk5Nzg2MX0.4KVvpzbxUXCj9AqHSzoERC2d9kxI_mMn3ctQYCI4dfA'
+
+2503088087@qq.com
+
+{
+"account":"18520868479",
+"accountType":1,
+"countryCode":"86",
+"password":"12345678",
+"passwordType":0
+}
+
+现网：
+
+体脂师
+18520868479
+12345678
+
+document.cookie='userId=446677'
+document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDY2NzciLCJleHAiOjE1NzUwODQ1MzB9.uDuK6JqYP4zCFWhi5UT1YRBd8gwpNgapTP-b7WJOU-I'
+
+
+199854
+120.25.194.203:22 (新)
+bG
+
+
+whereis nginx
+nginx -s reload
+
+git checkout 2.2.3
+git pull origin 2.2.3
