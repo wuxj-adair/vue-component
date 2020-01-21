@@ -1,0 +1,76 @@
+---------------------wx---------------------
+微信小程序
+地址：https://mp.weixin.qq.com/
+账号：lutongnet@126.com
+密码：tonglu_12
+
+微信小程序ID： wxeb222f7a18a7f114
+小程序密钥： 44c9cb034d38e4c29cb9452aab3ca929
+
+
+微信开放平台
+地址：https://open.weixin.qq.com
+账号： caizuan@lutongnet.com
+密码：LTott888666
+---------------------ott(9091 9093 9094)---------------------
+9099
+root
+Lutong2016!@#456ABC;
+---------------------测试服务器116---------------------
+内网ip地址：172.16.1.116
+外网ip地址：113.108.110.26
+---------------------------
+系统：centos6.3 
+账号密码：root / ltsys1234
+
+
+
+ip地址：172.16.1.116
+账号密码：root / ltsys123456
+/opt/tomcat7/tomcat-central-10086/webapps
+mysql账号密码： root / yftest
+
+
+D:\work\glpt\svn_cen\build\classes\com\lutongnet\iptv\controller
+/opt/tomcat7/tomcat-central-10086/webapps/central-admin/WEB-INF/classes/com/lutongnet/iptv/controller
+
+
+D:\work\glpt\svn_cen\build\classes\com\lutongnet\iptv\service
+/opt/tomcat7/tomcat-central-10086/webapps/central-admin/WEB-INF/classes/com/lutongnet/iptv/service
+
+D:\work\glpt\svn_cen\WebContent\WEB-INF\views\train
+/opt/tomcat7/tomcat-central-10086/webapps/central-admin/WEB-INF/views/train
+
+
+先进入tomcat路径：  cd /usr/local/*/tomcat/*/bin/（*省略的是文件路径名称）
+
+
+然后 ./shutdown.sh 停止 
+  
+         ./startup.sh  启动
+		 
+	sh npm-install.sh	
+
+---------------------------		
+权限		 chmod +x sh
+---------------------------
+查看内核版本及平台 uname -r -m
+查看发行版版本  lsb_release -a
+---------------------------
+linux 如何查看防火墙
+
+service iptables status iptables服务状态
+启动和关闭防火墙:
+1) 重启后生效
+        开启： chkconfig iptables on
+        关闭： chkconfig iptables off
+2) 即时生效，重启后失效
+        开启： service iptables start
+        关闭： service iptables stop
+---------------------------
+复制 cp -r 文件1 文件2
+---------------------欧阳金泉ip---------------------
+172.16.4.119
+------------------------------------------------------
+/home/chatofpomelo-websocket-master/web-server/public/js
+/home/chatofpomelo-websocket-master/web-server

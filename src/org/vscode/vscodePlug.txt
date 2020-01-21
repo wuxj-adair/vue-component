@@ -1,0 +1,8 @@
+Vue CSS Peek  定位到样式   为单页面的vue文件提供css转定义的支持   
+Auto px2rem   px转rem     输入px后，将自动补全为sass函数或转换为rem单位的插件 
+px to rem     px与rem互相转（主要拿来看文件rem是多少px）   Converts px to rem, and vice versa
+Bracket Pair Colorizer   代码括号匹配高亮              A customizable extension for colorizing matching brackets
+Code Runner  跑js代码     Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, C
+
+
+

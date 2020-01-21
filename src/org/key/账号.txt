@@ -1,0 +1,20 @@
+微信公众号地址： https://mp.weixin.qq.com/  
+微信账号： wechat_register@163.com   
+微信密码： P@ssw0rd_e23
+
+AppID(应用ID)：   wx3164fa43a3993362
+AppSecret(应用密钥)：  b47dbff4a4b8495851de9af2012634d0
+
+微信小程序
+地址：https://mp.weixin.qq.com/
+账号：lutongnet@126.com
+密码：tonglu_12
+
+微信小程序ID： wxeb222f7a18a7f114
+小程序密钥： 44c9cb034d38e4c29cb9452aab3ca929
+
+
+微信开放平台
+地址：https://open.weixin.qq.com
+账号： caizuan@lutongnet.com
+密码：LTott888666
