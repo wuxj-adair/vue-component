@@ -1,0 +1,8 @@
+js：array string this 原型链 继承 promise window document 
+ requireJs
+html：html5  回流  兼容
+css: 圣杯 bfc 加速   rem是如何实现自适应布局的
+vue：双向绑定 
+solt:1.具名插槽  <solt name="name1" value></solt> solt=name      2.作用域插槽
+ref:refs.
+跨层级 provide inject
