@@ -1,5 +1,3 @@
-## Vue Loader
-
 Vue Loader 是一个 [webpack](https://webpack.js.org/) 的 loader
 
 ```搜索bash

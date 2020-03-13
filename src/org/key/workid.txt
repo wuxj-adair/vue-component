@@ -22,6 +22,15 @@ shouba2019
 瘦吧后台管理账号:
 shouba-web-admin:  hanxiyang
 shouba2019
+
+地址：https://gitea.zhi20.cn:3000/zhi20/fe-school-vod
+ 
+shouBa2020!
+
+网易云信
+账号：wuxiangjun
+昵称：wuxiangjun
+密码：wuxiangjun
 ------------------------web------------------------
 
 现网网址: http://web.shouba.cn/222/daily

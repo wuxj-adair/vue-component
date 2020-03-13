@@ -12,4 +12,6 @@
 
 5. Function也是一个函数，函数是一种对象，也有__proto__属性。既然是函数，那么它一定是被Function创建。所以——Function是被自身创建的。所以它的__proto__指向了自身的Prototype。 
 
+   ![img](file:///C:\Users\ADAIR_~1\AppData\Local\Temp\ksohtml5532\wps1.jpg)
+   
    
