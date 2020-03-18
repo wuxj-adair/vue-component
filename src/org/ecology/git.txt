@@ -1,0 +1,6 @@
+git remote add origin http://shoubagit.shouba.cn/H5/shouba-h5-project.git   更新状态
+git fetch 相当于是从远程获取最新到本地，不会自动merge
+git pull：相当于是从远程获取最新版本并merge到本地
+git checkout dev
+git pull
+git remote  -v  # 查看关联的所有的远程仓储名称及地址

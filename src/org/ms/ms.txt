@@ -1,8 +1,17 @@
-js£ºarray string this Ô­ĞÍÁ´ ¼Ì³Ğ promise window document 
+ç§»åŠ¨ç«¯ï¼š
+http:
+cssï¼š
+git:
+webpack:
+linux
+ç§»åŠ¨ç«¯å…¼å®¹æ€§ ios å®‰å“
+vue
+vueæ’ä»¶
+jsï¼šarray string this åŸå‹é“¾ ç»§æ‰¿ promise window document 
  requireJs
-html£ºhtml5  »ØÁ÷  ¼æÈİ
-css: Ê¥±­ bfc ¼ÓËÙ   remÊÇÈçºÎÊµÏÖ×ÔÊÊÓ¦²¼¾ÖµÄ
-vue£ºË«Ïò°ó¶¨ 
-solt:1.¾ßÃû²å²Û  <solt name="name1" value></solt> solt=name      2.×÷ÓÃÓò²å²Û
+htmlï¼šhtml5  å›æµ  å…¼å®¹
+css: åœ£æ¯ bfc åŠ é€Ÿ   remæ˜¯å¦‚ä½•å®ç°è‡ªé€‚åº”å¸ƒå±€çš„
+vueï¼šåŒå‘ç»‘å®š 
+solt:1.å…·åæ’æ§½  <solt name="name1" value></solt> solt=name      2.ä½œç”¨åŸŸæ’æ§½
 ref:refs.
-¿ç²ã¼¶ provide inject
+è·¨å±‚çº§ provide inject

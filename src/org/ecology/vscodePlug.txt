@@ -3,6 +3,6 @@ Auto px2rem   px转rem     输入px后，将自动补全为sass函数或转换�
 px to rem     px与rem互相转（主要拿来看文件rem是多少px）   Converts px to rem, and vice versa
 Bracket Pair Colorizer   代码括号匹配高亮              A customizable extension for colorizing matching brackets
 Code Runner  跑js代码     Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, C
-
+gitlens   插件可以直接在光标处显示代码编写人以及时间；方便共同开发时候git做版本控制时候的相关代码管理。
 
 

@@ -1,0 +1,14 @@
+
+babel-plugin-component //按需引用
+
+
+
+devWebpackConfig.devServer.port = '39144' //port
+
+quiet: true, // necessary for FriendlyErrorsPlugin
+disableHostCheck: true,
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'manifest',
+      minChunks: Infinity
+    }),
+

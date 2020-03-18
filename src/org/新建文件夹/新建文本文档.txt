@@ -1,6 +1,0 @@
-JSON.stringify(window.charRoomOwner, null, 2)
-window.windowChatroom
-ff4d5fbbafdf976cfdc032e3bde78de5
-window.charRoomOwner
-window.chatRoomMembers
-JSON.stringify(window.chatRoomMembers, null, 2)

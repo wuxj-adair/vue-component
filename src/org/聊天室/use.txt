@@ -1,0 +1,17 @@
+JSON.stringify(window.charRoomOwner, null, 2)
+window.windowChatroom
+ff4d5fbbafdf976cfdc032e3bde78de5
+window.charRoomOwner
+window.chatRoomMembers
+JSON.stringify(window.chatRoomMembers, null, 2)
+window.chatRoomMembers2
+JSON.stringify(window.charMsgs, null, 2)
+window.charMsgs
+window.objMsgs
+JSON.stringify(, null, 2)
+JSON.stringify(window.objMsgs, null, 2)
+msgs2
+JSON.stringify(charMsgsA, null, 2)
+JSON.stringify(charMsgsB, null, 2)
+
+ that.$message.error('请输入重新获取图形验证码');

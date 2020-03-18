@@ -1,0 +1,6 @@
+-webkit-overflow-scrolling: touch; /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
+-webkit-overflow-scrolling: auto; /* 当手指从触摸屏上移开，滚动会立即停止 */
+开启GPU加速，导致APP 运行内存过高而崩溃。
+在ios设备中，利用`overflow`来模拟滚动会出现卡顿的情况，可以通过设置`-webkit-overflow-scrolling: touch`来解决，原因是设置后ios会为其创建一个`UIScrollView`，利用硬件来加速渲染。
+
+移动端文字行高不用rem的原因，也就是部分安卓手机不支持小数点，行高不支持奇数值

@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-20 16:11:42
+ * @LastEditTime: 2020-03-11 15:36:21
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\src\org\css\css.html
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +17,9 @@
 </head>
 
 <body>
+     <!-- 文本溢出换行 -->
+    <div class="break-all">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+
     <!-- 文本溢出出现省略号 -->
     <div class="nowrap">单行文本溢出出现省略号:overflow: hidden;text-overflow:ellipsis;white-space: nowrap;</div>
     <div class="line-clamp">多行文本溢出出现省略号:display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3;</div>
@@ -20,6 +31,11 @@
     </div>
 </body>
 <style>
+    /* 文本溢出换行 */
+    .break-all {
+        width: 500px;
+        word-break: break-all;
+    }
     /* 单行文本溢出出现省略号 */
     .nowrap {
         width: 500px;
@@ -53,6 +69,7 @@
     .box-shadow2 {
         background: #FFF;
     }
+    
 </style>
 
 </html>
