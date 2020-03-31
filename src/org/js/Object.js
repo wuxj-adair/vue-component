@@ -2,64 +2,71 @@
 //将所有可枚举属性的值从一个或多个源对象复制到目标对象。返回目标对象。
 
 //深浅拷贝问题
-let obj1 = { a: 0 , b: { c: 0}}; 
-let obj2 = Object.assign({}, obj1); 
+let obj1 = { a: 0, b: { c: 0 } };
+let obj2 = Object.assign({}, obj1);
 console.log(JSON.stringify(obj2)); // { a: 0, b: { c: 0}} 
 
-obj2.a = 2; 
+obj2.a = 2;
 console.log(JSON.stringify(obj1)); // { a: 0, b: { c: 0}} 
 console.log(JSON.stringify(obj2)); // { a: 2, b: { c: 0}}
- 
-obj2.b.c = 3; 
+
+obj2.b.c = 3;
 console.log(JSON.stringify(obj1)); // { a: 0, b: { c: 3}} 
-console.log(JSON.stringify(obj2)); // { a: 2, b: { c: 3}} 
+console.log(JSON.stringify(obj2)); // { a: 2, b: { c: 3}}
 
 // Deep Clone 
-obj1 = { a: 0 , b: { c: 0}};                                        
-let obj3 = JSON.parse(JSON.stringify(obj1)); 
-obj1.a = 4; 
-obj1.b.c = 4; 
+obj1 = { a: 0, b: { c: 0 } };
+let obj3 = JSON.parse(JSON.stringify(obj1));
+obj1.a = 4;
+obj1.b.c = 4;
 console.log(JSON.stringify(obj3)); // { a: 0, b: { c: 0}}   
 
 
 //Object.create(proto[, propertiesObject])
 //创建一个新对象，使用现有的对象来提供新对象的__proto__。
+//极简Polyfill
+function likeCreate(proto) {
+  function F() { }
+  F.prototype = proto;
+  return new F();
+};
+
 
 //用 Object.create实现类式继承
 // Shape - 父类(superclass)
 function Shape() {
-    this.x = 0;
-    this.y = 0;
-  }
-  
-  // 父类的方法
-  Shape.prototype.move = function(x, y) {
-    this.x += x;
-    this.y += y;
-    console.info('Shape moved.');
-  };
-  
-  // Rectangle - 子类(subclass)
-  function Rectangle() {
-    Shape.call(this); // call super constructor.
-  }
-  
-  // 子类续承父类
-  Rectangle.prototype = Object.create(Shape.prototype);
-  Rectangle.prototype.constructor = Rectangle;
-  
-  var rect = new Rectangle();
-  
-  console.log('Is rect an instance of Rectangle?',
-    rect instanceof Rectangle); // true
-  console.log('Is rect an instance of Shape?',
-    rect instanceof Shape); // true
-  rect.move(1, 1); // Outputs, 'Shape moved.'
+  this.x = 0;
+  this.y = 0;
+}
 
-  //使用混入的方式，继承多个对象
-  function MyClass() {
-    SuperClass.call(this);
-    OtherSuperClass.call(this);
+// 父类的方法
+Shape.prototype.move = function (x, y) {
+  this.x += x;
+  this.y += y;
+  console.info('Shape moved.');
+};
+
+// Rectangle - 子类(subclass)
+function Rectangle() {
+  Shape.call(this); // call super constructor.
+}
+
+// 子类续承父类
+Rectangle.prototype = Object.create(Shape.prototype);
+Rectangle.prototype.constructor = Rectangle;
+
+var rect = new Rectangle();
+
+console.log('Is rect an instance of Rectangle?',
+  rect instanceof Rectangle); // true
+console.log('Is rect an instance of Shape?',
+  rect instanceof Shape); // true
+rect.move(1, 1); // Outputs, 'Shape moved.'
+
+//使用混入的方式，继承多个对象
+function MyClass() {
+  SuperClass.call(this);
+  OtherSuperClass.call(this);
 }
 
 // 继承一个类
@@ -69,8 +76,8 @@ Object.assign(MyClass.prototype, OtherSuperClass.prototype);
 // 重新指定constructor
 MyClass.prototype.constructor = MyClass;
 
-MyClass.prototype.myMethod = function() {
-    // do a thing
+MyClass.prototype.myMethod = function () {
+  // do a thing
 };
 
 
@@ -150,12 +157,12 @@ console.log(Object.entries(obj)); // [ ['foo', 'bar'], ['baz', 42] ]
 //把键值对列表转换为一个对象。
 
 //Map 转化为 Object
-const map = new Map([ ['foo', 'bar'], ['baz', 42] ]);
+const map = new Map([['foo', 'bar'], ['baz', 42]]);
 const obj = Object.fromEntries(map);
 console.log(obj); // { foo: "bar", baz: 42 }
 
 //Array 转化为 Object
-const arr = [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ];
+const arr = [['0', 'a'], ['1', 'b'], ['2', 'c']];
 const obj = Object.fromEntries(arr);
 console.log(obj); // { 0: "a", 1: "b", 2: "c" }
 
@@ -202,7 +209,7 @@ var buz = {
 
 for (var name in buz) {
   if (buz.hasOwnProperty(name)) {
-    console.log('this is fog (' + 
+    console.log('this is fog (' +
       name + ') for sure. Value: ' + buz[name]);
   }
   else {
@@ -213,14 +220,14 @@ for (var name in buz) {
 //JavaScript 并没有保护 hasOwnProperty 这个属性名，
 //因此，当某个对象可能自有一个占用该属性名的属性时，就需要使用外部的 hasOwnProperty 获得正确的结果：
 var foo = {
-  hasOwnProperty: function() {
+  hasOwnProperty: function () {
     return false;
   },
   bar: 'Here be dragons'
 };
 
 foo.hasOwnProperty('bar'); // 始终返回 false
-  
+
 // 如果担心这种情况，
 // 可以直接使用原型链上真正的 hasOwnProperty 方法
 ({}).hasOwnProperty.call(foo, 'bar'); // true
