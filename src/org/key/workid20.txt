@@ -1,0 +1,5 @@
+中食云创后台管理系统 http://zhibotest.zhi20.com/admin/login
+账号：shangxueyuan  密码：123456
+
+云创测试管理后台：http://testv3.zhi20.com/admin/index   
+账号：admin 密码：123456

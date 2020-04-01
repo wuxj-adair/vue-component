@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-13 14:32:57
+ * @LastEditTime: 2020-04-01 14:44:20
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\src\App.vue
+ -->
 <template>
     <div id="app">
         <div id="nav">
@@ -22,6 +30,9 @@
                 </li>
                 <li>
                     <router-link to="/tree">实战 7：树形控件 —— Tree</router-link>
+                </li>
+                <li>
+                    <router-link to="/like-heart">like-heart</router-link>
                 </li>
             </ul>
         </div>
