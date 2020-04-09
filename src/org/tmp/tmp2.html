@@ -1,0 +1,48 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>addEventListener</title>
+</head>
+
+<body>
+    <div title="拖拽我" draggable="true">列表1</div>
+    <ul id='ul'>
+        <li id='li1'>List Item1</li>
+        <li id='li2'>List Item2</li>
+    </ul>
+    <script language="javascript" type="text/javascript">
+        function init() {
+            if (!!document.all) {
+                document.getElementById('li1').attachEvent('onclick', function (event) {
+                    alert('li1');
+                })
+                document.getElementById('li2').attachEvent('onclick', function (event) {
+                    alert('li2');
+                })
+                document.getElementById('ul').attachEvent('onclick', function (event) {
+                    alert('ul');
+                    //event.cancelBubble = true; 
+                    alert(event.stopPropagation);
+                });
+            } else {
+                document.getElementById('li1').addEventListener('click', function (event) {
+                    alert('li1');
+                }, true)
+                document.getElementById('li2').addEventListener('click', function (event) {
+                    alert('li2');
+                }, true)
+                document.getElementById('ul').addEventListener('click', function (event) {
+                    // event = event ? event : window.event;
+                    // event.stopPropagation();
+                    alert('ul');
+                }, true);
+
+            }
+        }
+        init();
+    </script>
+</body>
+
+</html>

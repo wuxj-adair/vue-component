@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-01 16:50:41
- * @LastEditTime: 2020-04-01 17:19:28
+ * @LastEditTime: 2020-04-02 15:59:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-component-book-master\src\views\like-heart\like-heart.vue
@@ -9,7 +9,7 @@
 <template>
   <div>
     <div @click="makeHeart">makeHeart</div>
-    <img src="./icon_flower.png" alt />
+    <!-- <img src="./icon_flower.png" alt /> -->
     <canvas id="cvs"></canvas>
   </div>
 </template>

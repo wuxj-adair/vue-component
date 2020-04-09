@@ -6,6 +6,9 @@ webpack:
 linux
 移动端兼容性 ios 安卓
 vue
+$route.params 
+$route.query 
+
 vue插件
 js：array string this 原型链 继承 promise window document 
  requireJs

@@ -1,0 +1,43 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-06 17:25:06
+ * @LastEditTime: 2020-04-09 11:39:24
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\src\org\tmp\tmp.html
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+    <!-- <script src="https://cdn.bootcss.com/babel-polyfill/7.8.7/polyfill.js"></script> -->
+</head>
+<body onclick="alert('body');">
+
+    <div onclick="clickBtn(event)"  style="width:100px;height:100px; background:#666;">
+        <input id="Button1" type="button" value="button" onclick="alert('btn');" />
+    </div>
+    <script language="javascript" type="text/javascript">
+        function clickBtn(event)
+        {
+            event=event?event:window.event;
+             //event.cancelBubble=true;
+            event.stopPropagation();
+            alert("123");
+        }
+    </script>
+</body>
+<script>
+    var arr=[1,2,3]
+    var b=[...arr,67]
+    console.log(b)
+
+    Array.prototype.set=function(){
+    console.log(121)
+}
+var arr1=[2,3]
+for(var a in arr1){
+    console.log(a)
+}
+</script>
+</html>
