@@ -96,8 +96,8 @@ document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDY2Nzci
 document.cookie='userId=446939'
 document.cookie='token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NDY5MzkiLCJleHAiOjE1Nzg3OTYxNDd9.RTVqjBs3rVdxYyZvlJKFLkbqxeLqmusRqn8AgJvg7zk'
 
-document.cookie='userId=10012152,'
-document.cookie="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDAxMjE1MiIsImV4cCI6MTU3OTQxOTkwNH0.0r7yStgaCCY9bPdltiYcze9XXVAEHOH0kv6pUTwp4ac  
+document.cookie='userId=10012152'
+document.cookie="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDAxMjE1MiIsImV4cCI6MTU3OTQxOTkwNH0.0r7yStgaCCY9bPdltiYcze9XXVAEHOH0kv6pUTwp4ac'  
 
 测试手机号：
 187186821600
