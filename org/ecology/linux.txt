@@ -1,0 +1,4 @@
+netstat -ano|findstr 39144
+
+whereis nginx
+nginx -s reload
