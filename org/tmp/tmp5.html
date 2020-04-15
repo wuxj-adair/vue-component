@@ -1,0 +1,42 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-09 14:14:38
+ * @LastEditTime: 2020-04-15 12:45:10
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\org\tmp\tmp4.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wxjAdair</title>
+</head>
+
+<body>111
+    <div>1112</div>
+</body>
+<script>
+    "use strict";
+
+    console.log("严格模式");
+    console.log('在全局作用域中函数中的this');
+    function f1() {
+        var a=1
+        console.log(this);
+    }
+
+    // function f2() {
+    //     function f3() {
+    //         console.log(this);
+    //     }
+    //     f3();
+    // }
+    window.f1();
+    f2();
+
+</script>
+
+</html>
