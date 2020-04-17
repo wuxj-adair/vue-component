@@ -1,0 +1,37 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-16 14:02:48
+ * @LastEditTime: 2020-04-16 14:18:25
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\org\js\data\cookie.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    document.cookie="cookieA=1"
+    document.cookie="userId=828";
+    let getCookie=(name) => {
+       let strCookie = document.cookie;
+       let arrCookie = strCookie.split(';');
+       for(let i = 0; i < arrCookie.length;i++) {
+         let arr = arrCookie[i].split('=');
+         if(arr[0].replace(/(^\s*)|(\s*$)/g, "") == name) {
+           return arr[1];
+         }
+       }
+       return '';
+    }
+    console.log( document.cookie)
+
+    console.log("cookie",getCookie("userId"))
+</script>
+</html>
