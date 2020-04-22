@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-03-13 14:25:50
+ * @LastEditTime: 2020-04-21 18:08:45
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\org\js\base.js
+ */
 let jsBase = {
         /**
      * 获取url参数值
