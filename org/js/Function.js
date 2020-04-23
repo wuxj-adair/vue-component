@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2020-01-16 14:50:11
- * @LastEditTime : 2020-01-19 10:29:04
- * @LastEditors  : Please set LastEditors
+ * @LastEditTime: 2020-04-23 09:21:54
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-component-book-master\src\org\Function.js
  */
-//call()方法的作用和 apply() 方法类似，
+//call和apply
 //区别就是call()方法接受的是参数列表，而apply()方法接受的是一个参数数组。(记忆：apply 与array都是a开头，所以apply()接受的是一个参数数组)
 
 //func.apply(thisArg, [argsArray])
