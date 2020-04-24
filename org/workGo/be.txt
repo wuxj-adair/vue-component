@@ -27,10 +27,11 @@
 5. 了解Spring MVC、sql与MongoDB
 
 1. 精通javascript、HTML、CSS
-2. 熟练掌握vue 、webpack
-3. 熟悉ES6、微信小程序、jQuery、SVG、d3、easyui 、ajax
-4. 了解Dcloud、Polemo、Bootstrap
-5. 了解Spring MVC、sql与MongoDB
+2. 熟练掌握vue 、webpack、ES6、微信小程序
+3. 熟练掌握Mint UI、Element
+4. 熟悉jQuery、SVG、d3、easyui 、ajax
+5. 了解Dcloud、Polemo、Bootstrap
+6. 了解Spring MVC、sql与MongoDB
 
 
 
