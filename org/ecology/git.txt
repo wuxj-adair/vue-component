@@ -7,3 +7,5 @@ git remote  -v  # 查看关联的所有的远程仓储名称及地址
 
 git checkout 2.2.3
 git pull origin 2.2.3
+
+git remote -v  #git查看远程仓库地址
