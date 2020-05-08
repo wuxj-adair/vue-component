@@ -1,0 +1,42 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-29 18:01:53
+ * @LastEditTime: 2020-04-29 18:06:44
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\org\tmp\tmp12.html
+ -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.bootcss.com/vue/2.5.10/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <input v-model="message"/>
+            <p id="vueD">{{ message }}</p>
+            <button v-on:click="show">点我</button>
+        </div>
+         
+        <script>
+            let vm=new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello world'
+                },
+                methods:{
+                    show:function(){alert("run...")}
+                }
+            })
+vm.message="1212"
+console.log(document.getElementById("vueD").innerHTML)
+vm.$nextTick(function(){
+console.log(document.getElementById("vueD").innerHTML)
+})
+        </script>
+    </html>
