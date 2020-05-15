@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2020-03-23 15:41:50
- * @LastEditTime: 2020-04-15 18:25:31
+ * @LastEditTime: 2020-05-15 14:08:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \vue-component-book-master\src\org\step\promise.js
+ * @FilePath: \vue-component-book-master\org\self\promise.js
  */
 class Promise{
     constructor(executor){
@@ -59,17 +59,11 @@ class Promise{
   }
 
 usePromise=new Promise(function(resolve){
-    console.log("111111222")
-     resolve("123")
-    // setTimeout(function(){
-    //     resolve("123")
-    // },2000)
+    console.log("in Promise")
+    resolve("Promise resolve")
 }).then(
     function(){
-        console.log("then")
+        console.log("Promise then")
     }  
 )
-// setTimeout(function(){
-//     console.log("11111122222")
-//     },0)
-console.log("11111122222")
+console.log("out")
