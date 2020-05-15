@@ -1,13 +1,35 @@
-/*
- * @Author: your name
- * @Date: 2020-03-24 15:30:04
- * @LastEditTime: 2020-03-24 17:10:14
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \vue-component-book-master\src\org\tmp\tmp2.js
- */
-var obj = {0: 'a', 1: 'b', 2:'c', length: 3};
-Array.from(obj, function(value, index){
-  console.log(value, index, this, arguments.length);
-  return value.repeat(3); //必须指定返回值，否则返回undefined
-}, obj);
+function copy(resource) {
+  if (typeof resource != "object") {
+    return
+  }
+  let isObject = Object.prototype.toString.call(resource) == "[object Object]"
+
+  let target = isObject ? {} : []
+  for (let it in resource) {
+
+    if (typeof resource != "object") {
+      target[it] = copy(resource[it])
+    } else {
+      target[it] = resource[it]
+    }
+  }
+  return target
+}
+let a = copy({ a: 3, c: 6, g: 0 })
+console.log(a)
+
+function deepClone(obj) {
+  if(!obj && typeof obj !== 'object'){
+      return;
+  }
+  var newObj= toString.call(obj) === '[object Array]' ? [] : {};
+  for (var key in obj) {
+      if (obj[key] && typeof obj[key] === 'object') {
+          newObj[key] = deepClone(obj[key]);
+      } else {
+          newObj[key] = obj[key];
+      }
+  }
+  return newObj;
+}
+

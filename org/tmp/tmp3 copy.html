@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-06 17:25:06
- * @LastEditTime: 2020-05-14 13:59:45
+ * @LastEditTime: 2020-05-14 14:07:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-component-book-master\src\org\tmp\tmp.html
@@ -15,16 +15,17 @@
     <!-- <script src="https://cdn.bootcss.com/babel-polyfill/7.8.7/polyfill.js"></script> -->
 </head>
 
-<body onclick="alert('body');">
+<body >
 
     <div onclick="clickBtn(event)" style="width:100px;height:100px; background:#666;">
-        <input id="Button1" type="button" value="button" onclick="alert('btn');" />
+        <input id="Button1" type="button" value="button"/>
     </div>
     <script language="javascript" type="text/javascript">
         let fd = function (fn, first, wait) {
             let cantDo = null;
             let that = this;
             return function (...arg) {
+                console.log(cantDo)
                 if (cantDo) {
                     clearTimeout(cantDo)
 
@@ -58,7 +59,7 @@
              e.cancelBubble = true
             //   e = e || window.event;
             if (window.event) {    //阻止事件冒泡
-                         e.cancelBubble = true;
+                window.event.cancelBubble = true;
                 
             } else {
                          e.stopPropagation();
@@ -68,15 +69,6 @@
     </script>
 </body>
 <script>
-    var timer = setTimeout(function(){
-    　　　　console.log("timer1",timer==null,timer);
-     clearTimeout(timer);
-    　　},100);
-    
-    // clearTimeout(timer);
-    setTimeout(function(){
-        　　　　console.log("timer2",timer==null,timer);
-        　　},2000);
 //     var arr=[1,2,3]
 //     var b=[...arr,67]
 //     console.log(b)
