@@ -1,11 +1,11 @@
 /*
  * @Author: your name
  * @Date: 2020-03-23 15:41:50
- * @LastEditTime: 2020-05-15 14:08:19
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-05-18 13:49:29
+ * @LastEditors: your name
  * @Description: In User Settings Edit
- * @FilePath: \vue-component-book-master\org\self\promise.js
- */
+ * @FilePath: \vue-component-book-master\org\print\promise.js
+ */ 
 class Promise{
     constructor(executor){
       this.state = 'pending';

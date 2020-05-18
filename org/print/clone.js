@@ -1,11 +1,11 @@
 /*
  * @Author: your name
  * @Date: 2020-05-14 15:56:29
- * @LastEditTime: 2020-05-14 16:08:51
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-05-18 13:49:15
+ * @LastEditors: your name
  * @Description: In User Settings Edit
- * @FilePath: \vue-component-book-master\org\self\clone.js
- */
+ * @FilePath: \vue-component-book-master\org\print\clone.js
+ */ 
 //该方法存在引用丢失的问题
 function deepClone(obj) {
     if(!obj && typeof obj !== 'object'){
