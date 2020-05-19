@@ -15,7 +15,7 @@ new Date(str.replace(/-/g,'/'));
 #### IOS  -webkit-overflow-scrolling
 
 ```CSS
-/*Phone手机在滑动overflow-y: scroll的元素上滑动的时候会顿卡，需要加入如下的css代码就可以了*/
+/*Phone手机滑动overflow-y: scroll的元素上滑动的时候会顿卡，需要加入如下的css代码就可以了*/
 -webkit-overflow-scrolling:touch;
 ```
 

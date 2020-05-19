@@ -1,1 +1,0 @@
-monitorEvents($0,'click')
