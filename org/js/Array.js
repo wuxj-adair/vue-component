@@ -12,10 +12,7 @@
 
 // 遍历方法(12个)，不会改变自身，分别为forEach、every、some、filter、map、reduce、reduceRight 以及ES6新增的方法entries、find、findIndex、keys、values
 
-// 所有插入元素的方法, 比如 push、unshift，一律返回数组新的长度；
-// 所有删除元素的方法，比如 pop、shift、splice 一律返回删除的元素，或者返回删除的多个元素组成的数组；
-// 部分遍历方法，比如 forEach、every、some、filter、map、find、findIndex，它们都包含function(value,index,array){} 和 thisArg 这样两个形参。
-// Array.prototype 的所有方法均具有鸭式辨型这种神奇的特性。它们不止可以用来处理数组对象，还可以处理类数组对象。
+  
 
 // 例如 javascript 中一个纯天然的类数组对象字符串（String），像join方法（不改变当前对象自身）就完全适用，可惜的是 Array.prototype 中很多方法均会去试图修改当前对象的 length 属性，比如说 pop、push、shift, unshift 方法，操作 String 对象时，由于String对象的长度本身不可更改，这将导致抛出TypeError错误。
 
@@ -136,3 +133,9 @@ if (!Array.isArray) {
         return Object.prototype.toString.call(arg) === '[object Array]';
     };
 }
+
+var array = ["abc", "xyz"];
+var iterator = array.keys();
+console.log(iterator.next()); // Object {value: 0, done: false}
+console.log(iterator.next()); // Object {value: 1, done: false}
+console.log(iterator.next()); // Object {value: undefined, done: false}
