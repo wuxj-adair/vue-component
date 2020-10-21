@@ -22,7 +22,7 @@ obj1.b.c = 4;
 console.log(JSON.stringify(obj3)); // { a: 0, b: { c: 0}}   
 
 
-//Object.create(proto[, propertiesObject])
+//Object.create(proto[, propertiesObject]) 
 //创建一个新对象，使用现有的对象来提供新对象的__proto__。
 //极简Polyfill
 function likeCreate(proto) {
