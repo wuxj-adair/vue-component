@@ -15,9 +15,18 @@ new Date(str.replace(/-/g,'/'));
 #### IOS  -webkit-overflow-scrolling
 
 ```CSS
+/*开启GPU加速，导致APP 运行内存过高而崩溃。*/
+/*在ios设备中，利用`overflow`来模拟滚动会出现卡顿的情况，可以通过设置`-webkit-overflow-scrolling: touch`来解决，原因是设置后ios会为其创建一个`UIScrollView`，利用硬件来加速渲染。*/
 /*Phone手机滑动overflow-y: scroll的元素上滑动的时候会顿卡，需要加入如下的css代码就可以了*/
 -webkit-overflow-scrolling:touch;
 ```
+
+```css
+-webkit-overflow-scrolling: touch; /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
+-webkit-overflow-scrolling: auto; /* 当手指从触摸屏上移开，滚动会立即停止 */
+```
+
+
 
 ####  IOS  有输入框在底部,点击输入框，弹出的键盘会把输入框盖住，只有在输入部分内容之后输入框才会出现在视窗中 
 
@@ -89,3 +98,6 @@ a,a:hover,a:active,a:visited,a:link,a:focus{
 } 
 ```
 
+#### 移动端样式
+
+移动端文字行高不用rem的原因，也就是部分安卓手机不支持小数点，行高不支持奇数值

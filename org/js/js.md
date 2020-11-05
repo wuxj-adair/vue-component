@@ -36,7 +36,7 @@ console.log('console');
 ok，第一轮事件循环结束了，我们开始第二轮循环，当然要从宏任务Event Queue开始。我们发现了宏任务Event Queue中`setTimeout`对应的回调函数，立即执行。
 结束。
 
-#### JavaScript 中的执行上下文和执行栈
+#### JavaScript 中的执行上下文和执行栈（执行栈存储执行上下文）
 
  执行上下文是当前 JavaScript 代码被解析和执行时所在环境的抽象概念。 
 

@@ -141,7 +141,7 @@ Object.assign(MyClass.prototype, OtherSuperClass.prototype);
 // 重新指定constructor
 MyClass.prototype.constructor = MyClass;
 
-MyClass.prototype.myMethod = function () {
+My Class.prototype.myMethod = function () {
   // do a thing
 };
 
@@ -162,7 +162,7 @@ function likeCreate(proto) {
 
 模拟实现new
 
-```js
+```js 
 // 构造函数
 let Parent = function (name, age) {
     this.name = name;
@@ -182,7 +182,7 @@ let newMethod = function (Parent, ...rest) {
 };
 //创建实例，将构造函数Parent与形参作为参数传入
 const child = newMethod(Parent, 'echo', 26);
-child.sayName() //'echo';
+child.sayName() //'echo'; 
 
 //最后检验，与使用new的效果相同
 child instanceof Parent//true
@@ -238,7 +238,7 @@ function debounce(func, wait, immediate) {
       if (!timeout) {
         func.apply(context, args)
       }
-      if (immediate) {
+      if (immediate) { 
         timeout = setTimeout(function () {
           timeout = null
         }, wait)
