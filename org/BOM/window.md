@@ -1,4 +1,5 @@
-window.location
+#### window.location
+
 用该属性获取页面 URL 地址
 包含的属性 
 

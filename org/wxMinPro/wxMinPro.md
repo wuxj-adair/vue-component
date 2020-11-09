@@ -1,6 +1,4 @@
- `hidden`元素对块状布局才生效 
-
-
+####  `hidden`元素对块状布局才生效 
 
 ```xml
 <!-- display:flex,非block,hidden没生效 -->
