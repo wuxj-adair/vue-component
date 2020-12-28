@@ -1,3 +1,17 @@
+#### 模块系统
+
+TypeScript 与 ECMAScript 2015 一样，任何包含顶级 `import` 或者 `export` 的文件都被当成一个模块。
+
+相反地，如果一个文件不带有顶级的`import`或者`export`声明，那么它的内容被视为全局可见的。
+
+比如我们改造一下上面的代码,我们在`1.ts`文件中改动代码如下:
+
+```
+export const a = 1
+```
+
+那么上面的问题就消失了，原因就是`export`把`a`变量变成了局部的命名空间内，与`2.ts`文件中的全局变量`a`不再产生冲突
+
 通行的Javascript模块规范共有两种：[CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1)和[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)。
 
 #### CommonJS
@@ -137,8 +151,7 @@ require.config({
 　　　　paths: {
 　　　　　　"jquery": "jquery.min",
 　　　　　　"underscore": "underscore.min",
-　　　　　　"backbone": "backbone.min"
-　　　　}
+　　　　　　"backbone": "backbone.min" 
 　　});
 ```
 
@@ -157,7 +170,7 @@ require.js要求，每个模块是一个单独的js文件。这样的话，如�
 require.js加载的模块，采用AMD规范。
 就是模块必须采用特定的define()函数来定义。如果一个模块不依赖其他模块，那么可以直接定义在define()函数之中。
 假定现在有一个math.js文件，它定义了一个math模块。那么，math.js就要这样写：
-
+ 
 ```jsx
    // math.js
 　　define(function (){
