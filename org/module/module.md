@@ -170,7 +170,7 @@ require.js要求，每个模块是一个单独的js文件。这样的话，如�
 require.js加载的模块，采用AMD规范。
 就是模块必须采用特定的define()函数来定义。如果一个模块不依赖其他模块，那么可以直接定义在define()函数之中。
 假定现在有一个math.js文件，它定义了一个math模块。那么，math.js就要这样写：
- 
+
 ```jsx
    // math.js
 　　define(function (){
@@ -424,50 +424,4 @@ define(function(require, exports) {
     }
 })
 ```
-
-### ES6 Module
-
-ES6   浏览器的模块化标准。
-
-#### 模块引入
-
-浏览器使用以下方式引入一个ES6模块化文件
-
-```
-<script src="./xxx.js" type="module"></script>
-```
-
-#### 模块导出
-
-1. 模块导出分为两种， 基本导出和默认导出
-
-   ```js
-   export var a = 1 // 基本导出a=1  
-   var c = 3; export {c} // 基本导出c=3. 
-   var c = 3; export {c as temp} // 基本导出temp=3.  
-   export {c as default} // 默认导出default = 3。
-   ```
-
-   ```js
-   export default 3 // 默认导出default = 3
-   ```
-
-   我们平时 直接 export default 一把梭。
-
-#### 模块导入
-
-```js
-import {a, b} from "模块路径"  
-import {a as temp1 , b as temp2} from "模块路径"  
-import {defalut as a} from "模块路径"
-import c from "模块路径"  //相当于import {defalut as c} from "模块路径"  
-import * as obj from "模块路径"
-```
-
-##### 模块导入时注意
-
-1. ES6 module 采用依赖预加载模式， 所有模块导入均会提升到代码顶部
-2. 不能将导入代码放置到判断， 循环中
-3. 导入的内容放置到常量中， 不可更改
-4. ES6 module使用了缓存， 保证每个模块仅加载一次
 
