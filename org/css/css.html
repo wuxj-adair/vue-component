@@ -17,8 +17,9 @@
 </head>
 
 <body>
-     <!-- 文本溢出换行 -->
-    <div class="break-all">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+    <!-- 文本溢出换行 -->
+    <div class="break-all">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
 
     <!-- 文本溢出出现省略号 -->
     <div class="nowrap">单行文本溢出出现省略号:overflow: hidden;text-overflow:ellipsis;white-space: nowrap;</div>
@@ -29,6 +30,7 @@
         <div class="box-shadow1">box-shadow1</div>
         <div class="box-shadow2">box-shadow2</div>
     </div>
+    <div class="loading"></div>
 </body>
 <style>
     /* 文本溢出换行 */
@@ -36,10 +38,11 @@
         width: 500px;
         word-break: break-all;
     }
+
     /* 单行文本溢出出现省略号 */
     .nowrap {
-        width: 500px;
         /*为了兼容部分浏览器，需要设定宽度*/
+        width: 500px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -52,9 +55,8 @@
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
         /*设置具体的行数*/
-
+        -webkit-line-clamp: 3;
     }
 
     /* 阻止box-shadow阴影被覆盖 */
@@ -70,6 +72,25 @@
         background: #FFF;
     }
     
+    /* 简洁的 loading 省略号效果 */
+    .loading:after {
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: bottom;
+        content: "\2026";
+        -webkit-animation: ellipsis 2s infinite;
+    }
+
+    /*动画部分 */
+    @-webkit-keyframes ellipsis {
+        from {
+            width: 2px;
+        }
+
+        to {
+            width: 15px;
+        }
+    }
 </style>
 
 </html>

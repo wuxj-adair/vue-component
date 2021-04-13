@@ -1,0 +1,56 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-20 16:11:42
+ * @LastEditTime: 2020-04-02 10:56:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-component-book-master\src\org\css\css.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- 垂直水平居中 -->
+    <div class="abs-transform">abs-transform</div>
+    <div class="flex-aj">flex-aj</div>
+    <div class="abs-dir-margin">abs-dir-margin</div>
+
+
+</body>
+<style>
+.abs-transform{
+    position: absolute;
+left: 50%;
+top: 50%;
+/*transform属性应用于元素的2D或3D转换。这个属性允许你将元素旋转，缩放，移动，倾斜等。 */
+ transform: translate(-50%, -50%);
+
+}
+.flex-aj{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+/* 利用绝对定位宽高拉升原理，中心居中元素 */
+.abs-dir-margin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+    height: 100px;
+    color: #F00;
+    text-align: center;
+}
+</style>
+
+</html>
